@@ -249,6 +249,106 @@
             
               
                 
+                <a class="post-title-link" href="/2017/09/22/浏览器WebP格式图片支持检测/" itemprop="url">
+                  浏览器WebP格式图片支持检测
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-09-22T11:53:57+08:00" content="2017-09-22">
+              2017-09-22
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/09/22/浏览器WebP格式图片支持检测/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/22/浏览器WebP格式图片支持检测/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 检测浏览器是否支持WebP</span></div><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">let</span> WebP = <span class="keyword">new</span> Image();</div><div class="line">    WebP.onload = WebP.onerror = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">window</span>.isSupportWebP = (WebP.height === <span class="number">2</span>);</div><div class="line">    &#125;;</div><div class="line">    WebP.src = <span class="string">'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA'</span>;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/09/19/fabricDemo/" itemprop="url">
                   fabricDemo
                 </a>
@@ -1219,149 +1319,13 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/01/my-first-blog/" itemprop="url">
-                  my first blog
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-01T14:18:36+08:00" content="2016-08-01">
-              2016-08-01
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/01/my-first-blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/01/my-first-blog/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="初步计划"><a href="#初步计划" class="headerlink" title="初步计划"></a>初步计划</h3><blockquote>
-<p>基础</p>
-</blockquote>
-<ul>
-<li><del>利用Ghost构建博客系统（百度开放云或者阿里云）；</del></li>
-<li>Ghost与Node版本不兼容，放弃(选用hexo)；</li>
-<li>添加登陆模块和评论模块（第三方账号登录）；</li>
-<li>分享学习过程；</li>
-</ul>
-<hr>
-<blockquote>
-<p>完善</p>
-</blockquote>
-<ul>
-<li>为毕设项目编写文档，Node.js、Express、MongoDB安装调试过程与编码过程；</li>
-<li>学习THREE.js过程（基本介绍）；</li>
-<li>模型存储方案（七牛、正则文件解析）；</li>
-<li>手机端预览方案；（介绍陀螺仪，重写VRControl结合欧拉角）；</li>
-</ul>
-<hr>
-<blockquote>
-<p>进阶</p>
-</blockquote>
-<ul>
-<li>毕设第一稿开工（纯前端，three.js特效）；</li>
-</ul>
-<hr>
-<blockquote>
-<p>持续</p>
-</blockquote>
-<ul>
-<li>日常积累案例分享，养成写博客的习惯；</li>
-</ul>
-<blockquote>
-<p>2016.8.1</p>
-<ul>
-<li>已完成blog系统构建，添加NexT主题；<br>2016.8.2</li>
-<li>添加多说评论系统，本地VS Code完成markdown的配置；</li>
-</ul>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1400,7 +1364,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1410,7 +1374,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
