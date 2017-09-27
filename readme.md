@@ -1,0 +1,1 @@
+[blog](http://gewangjie.win/)
